@@ -10,7 +10,7 @@ import BuscarPlaca from "./components/BuscarPlaca";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/observer">
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
