@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
 import Login from "./components/Login";
 import Dashboard from "./components/Dashboard";
 import CadClient from "./components/CadClient";
@@ -10,7 +11,8 @@ import BuscarPlaca from "./components/BuscarPlaca";
 
 function App() {
   return (
-    <BrowserRouter basename="/observer">
+    <BrowserRouter basename="/observer/">
+      <Navbar />
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />

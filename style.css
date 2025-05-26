@@ -478,7 +478,8 @@ footer {
     display: flex !important;
   }
 }
-/* botões na navbar 
+/* botões na navbar
+
 .navbar {
   position: relative;
   display: flex;
@@ -737,4 +738,84 @@ h3 {
 
   align-content: center;
   padding: 1rem 0rem;
+}
+
+.navbar {
+  padding: 15px;
+  position: fixed; /* Mantém a Navbar fixa no topo */
+  width: 100%;
+  top: 20px; /* Move a navbar dois centímetros para baixo */
+  left: 0;
+  z-index: 1000;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  display: inline-block;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: black; /* Mudança para melhor contraste sem fundo */
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.nav-list li a:hover {
+  background-color: #ff9800;
+  color: white;
+}
+
+body {
+  padding-top: 60px; /* Ajuste para evitar que o conteúdo fique escondido */
+}
+.navbar {
+  padding: 15px;
+  position: absolute;
+  width: 100%;
+  top: 40px; /* Dobrei a distância */
+  left: 0;
+  z-index: 1000;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  display: inline-block;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: white; /* Mantém a boa visibilidade */
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s;
+  background-color: black; /* Agora os botões têm fundo preto */
+}
+
+.nav-list li a:hover {
+  background-color: #ff9800;
+  color: black;
 }
