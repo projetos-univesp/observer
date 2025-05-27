@@ -11,7 +11,7 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/observer/">
       <Navbar/>
       <Routes>
         <Route path="/" element={<Login />} />
